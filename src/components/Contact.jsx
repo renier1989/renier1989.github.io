@@ -3,12 +3,15 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useState } from "react";
 import {close,logo2g} from "../assets";
+import { ReCAPTCHA } from "react-google-recaptcha";
 
 function Contact({language}) {
   const [shownoty, setShownoty] = useState(false);
   const [showerror, setShowerror] = useState(false);
   const form = useRef();
+  const reRef = useRef();
   const sendEmail = (e) => {
+    
     e.preventDefault();
       let nameval = document.getElementById("user_name").value;
       let emailval = document.getElementById("user_email").value;
@@ -40,6 +43,7 @@ function Contact({language}) {
 
   return (
     <section id="contact" className="pt-48 pb-48 ">
+      <ReCAPTCHA sitekey='6LcIeGokAAAAAE4GfmTKeUqgbo9iglTsVk0QfcLd' size='invisible' ref={reRef}/>
       <div className=" z-0  md:order-2  justify-center  flexCenter  ">
             <motion.div 
               className="md:absolute hidden md:block"
