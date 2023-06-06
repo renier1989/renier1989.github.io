@@ -305,7 +305,7 @@ export const experiences = [
         nameJobEs: 'FENACREP',
         datesEn : 'Jul 2020 - Present',
         datesEs : 'Jul 2020 - Actual',
-        positionEn: 'Programmer Amalyst',
+        positionEn: 'Programmer Analyst',
         positionEs: 'Analista Programador',
         roles: [
             {
