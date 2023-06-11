@@ -68,12 +68,30 @@ function Portfolio({language}) {
             >
               {/* Here goes the overlay with the information of project when hovered */}
               <div className='absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-gray-500 z-30 flex flex-col justify-center items-center text-center p-2 text-white'>
-                <p className="text-2xl ">
+
+              {language ? (
+                <div>
+                  <p className="text-2xl ">
                   {port.titleEs}
-                </p>
-                <p className="mt-7">
-                  {port.contentEs}
-                </p>
+                  </p>
+                  <p className="mt-7">
+                    {port.contentEs}
+                  </p>
+                </div>
+                ):(
+                <div>
+                  <div>
+                  <p className="text-2xl ">
+                  {port.titleEn}
+                  </p>
+                  <p className="mt-7">
+                    {port.contentEn}
+                  </p>
+                </div>
+                </div>
+              )}
+
+                
                 <div className="flex flex-row space-x-3 p-4">
                   <a href={port.code_link} target="_blank" className={`${port.code_link ? '':'hidden'} font-semibold text-white bg-fourth hover:bg-red-600 rounded-md py-1 px-1 transition duration-500`}>
                     CODE
