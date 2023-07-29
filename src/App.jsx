@@ -1,58 +1,51 @@
 // import styles from "./constants/style"
-import { Header, Home, About, Skills, Experiences, Portfolio, Testimonials, Contact, Footer } from "./components"
-import { useState } from "react"
+import { BrowserRouter, useRoutes } from "react-router-dom";
+import { Header, Footer } from "./components"
+// import { useState } from "react"
+import { Layout } from "./components/Layout";
+import { HomePage } from "./Pages/Home";
+import { Portfolio } from "./Pages/Portfolio";
+import { CvProvider, useCvInfo } from "./context";
+
+const AppRoutes = () => {
+
+  let routes = useRoutes([
+    {path : '/', element : <HomePage />},
+    {path : '/portfolio', element : <Portfolio />}
+  ]);
+
+  return routes;
+}
 
 function App() {
-  // const [darkMode, setDarkMode] = useState(false);
-  // FALSE = English - TRUE = Spanish
-  const [language, setLanguage] = useState(false);
+  // const cvinfo = useCvInfo();
+
+  
   return (
+    <CvProvider>
+      <BrowserRouter>
+        <Layout>
+              <div className="boxWidth">
+                <Header 
+                  // language={cvinfo.language}
+                  // setLanguage={cvinfo.setLanguage}
+                  />
+              </div>
 
-    <div className={`w-full overflow-hidden overflow-x-hidden font-poppins`}>
-    {/* <div className={`w-full overflow-hidden ${darkMode ? 'dark' : ''} font-poppins`}> */}
-        {/* Here goes the NavBar */}
-        
-          <div className="boxWidth">
-            <Header 
-              language={language}
-              setLanguage={setLanguage}
-              />
-          </div>
-      
-        {/* Here goes the About section */}
-        <div className="bg-first flexCenter darkMode paddingX">
-          <div className="boxWidth">
-            <Home language={language} setLanguage={setLanguage}/>
-          </div>
-        </div>
+                <AppRoutes />
 
-        {/* Here goes the About section */}
-        <div className="bg-first flexCenter darkMode paddingX">
-          <div className="boxWidth">
-            <About language={language} setLanguage={setLanguage}/>
-          </div>
-        </div>
-        
-        {/* Here goes the Skills Experiences Portfolio Testimonials Contact Footer sections */}
-        <div className="bg-first paddingX flexCenter darkMode">
-          <div className="boxWidth">
-            <Skills language={language} />
-            <Experiences language={language} className="-z-10"/>
-            <Portfolio language={language} />
-            {/* <Testimonials /> */}
-            <Contact language={language}/>
-          </div>
-        </div>
+            {/* Here goes the About section */}
+            <div className="bg-second flexCenter p-2 paragraph">
+              <div className="boxWidth">
+                <Footer 
+                // language={cvinfo.language}
+                />
+              </div>
+            </div>
 
-        {/* Here goes the About section */}
-        <div className="bg-second flexCenter p-2 paragraph">
-          <div className="boxWidth">
-            <Footer language={language}/>
-          </div>
-        </div>
-
-
-    </div>
+        </Layout>
+      </BrowserRouter>
+    </CvProvider>
   )
 }
 

@@ -1,6 +1,7 @@
 import {motion} from 'framer-motion'
 import { trips, todoapp, hoobank } from '../assets'
 import { portfolio } from '../constants'
+import { Link } from 'react-router-dom'
 
 
 function Portfolio({language}) {
@@ -25,6 +26,7 @@ function Portfolio({language}) {
               ):(
               <p>My Portfolio</p>
             )}
+            <Link to="/portfolio"> aqui</Link>
           </h1>
           <div className="w-full md:mt-0 mt-6 ">
             <p className='paragraph  md:max-w-[450px] max-w-md mx-auto'>
