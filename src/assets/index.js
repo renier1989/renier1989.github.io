@@ -15,7 +15,11 @@ import globe from './globe.svg'
 //portfolio images
 import trips from './trips-project.png'
 import todoapp from './todoapp-project.png'
-import hoobank from './hoobank-project.png'
+import hoobank from './hoobank-project.png' 
+import todoappv2 from './todoappv2-project.png' 
+import ecomerce from './ecomerce-project.png' 
+import pokedux from './pokedux-project.png' 
+import cvpage from './portfolio-project.png' 
 
 // iconos de logos
 import javascript from './javascript.png'
@@ -78,5 +82,9 @@ export {
     icon2w,
     logo2g,
     cves,
-    cven
+    cven,
+    todoappv2,
+    pokedux,
+    ecomerce,
+    cvpage
 }

@@ -13,6 +13,8 @@ function Header() {
 
   const scrollToHash = useCallback(() => {
     const hash = window.location.hash;
+    console.log("🚀 ~ file: Header.jsx:16 ~ scrollToHash ~ hash:", hash)
+    
     if (hash) {
       const targetElement = document.querySelector(hash);
       if (targetElement) {
@@ -23,6 +25,8 @@ function Header() {
           yOffset;
         window.scrollTo({ top: y, behavior: "smooth" });
       }
+    }else{
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, []);
 

@@ -82,9 +82,9 @@ function Contact({language}) {
             <div className=" md:mt-0 mt-6 ">
               <p className='paragraph  md:w-full mx-auto'>
               {language ? (
-                  <i>Me encantaría escuchar de ti. Por favor, envía un correo electrónico a <strong> vargasrjmejias27@gmail.com </strong> o llena el formulario de contacto en mi sitio web para ponerte en contacto conmigo.</i>
+                  <i>Me encantaría escuchar de ti. Por favor llena el formulario de contacto en mi sitio web para ponerte en contacto conmigo.</i>
                   ):(
-                  <i >I would love to hear from you. Please send an email to <strong> vargasrjmejias27@gmail.com </strong> or fill out the contact form on my website to get in touch with me.</i>
+                  <i >I would love to hear from you. Please fill out the contact form on my website to get in touch with me.</i>
                 )}
               </p>
             </div>

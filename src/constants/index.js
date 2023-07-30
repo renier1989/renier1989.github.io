@@ -13,6 +13,10 @@ import {
     , trips
     , todoapp
     , hoobank
+    , todoappv2
+    , pokedux
+    , ecomerce
+    , cvpage
 
 } from '../assets'
 
@@ -30,6 +34,12 @@ export const navLinks = [
         visible:true,
     },
     {
+        id: 'portfolio',
+        titleEn: 'Portfolio',
+        titleEs: 'Portafolio',
+        visible:true,
+    },
+    {
         id: 'skills',
         titleEn: 'Skills',
         titleEs: 'Habilidades',
@@ -41,12 +51,7 @@ export const navLinks = [
         titleEs: 'Experiencia',
         visible:true,
     },
-    {
-        id: 'portfolio',
-        titleEn: 'Portfolio',
-        titleEs: 'Portafolio',
-        visible:true,
-    },
+
 
     {
         id: 'testimonials',
@@ -197,12 +202,16 @@ export const skills = [
 export const portfolio = [
     {
         id:'project-1',
+        order:1,
         img: trips,
         titleEn: 'Page Trips',
-        titleEs: 'Pagina de Viajes',
+        titleEs: 'Página de Viajes',
         contentEn: 'This is a little web page that I created when I was learing to use TailwindCss.',
         contentEs: 'Esta esa una pagina simple que cree cuando estaba aprendiendo a usar TailwindCss.',
+        longContentEs: 'Desarrollé una página web de viajes utilizando solo HTML y TailwindCSS. Este proyecto estático cuenta con un diseño responsivo, amigable para dispositivos móviles, y muestra una selección de destinos turísticos y actividades emocionantes. Mi pasión por los viajes y la experiencia en desarrollo web se unieron para crear una interfaz minimalista y elegante.',
+        longContentEn: 'I developed a travel website using only HTML and TailwindCSS. This static project features a responsive design, mobile-friendly layout, showcasing a selection of tourist destinations and exciting activities. My passion for travel and web development expertise came together to craft a minimalist and elegant interface.',
         visible: true,
+        visible_port_page: true,
         link:'https://reniervargas.com/trips/',
         code_link:'https://github.com/renier1989/trips',
         tech: [
@@ -222,12 +231,16 @@ export const portfolio = [
     },
     {
         id:'project-2',
+        order:2,
         img: todoapp,
         titleEn: 'Todo App',
         titleEs: 'App de Tareas',
         contentEn: 'A little web page I made for learing and practice some cool things about ReactJs.',
         contentEs: 'Una pagina simple que hice para aprender y practicar algunas cosas geniales de ReactJs.',
-        visible: true,
+        longContentEn: 'I developed Todo app, a web application created using ReactJS, JavaScript, Node.js, and TailwindCSS. With a responsive design, it allows you to organize tasks efficiently. It was my first experience with ReactJS and an opportunity to strengthen my skills in TailwindCSS. Simplicity and functionality combined in a single page!',
+        longContentEs: 'Desarrolle Todo app, una aplicación web creada con ReactJS, JavaScript, Node.js y TailwindCSS. Con un diseño responsivo, te permite organizar tareas eficientemente. Fue mi primer contacto con ReactJS y una oportunidad para reforzar mis habilidades en TailwindCSS. ¡Simplicidad y funcionalidad en una sola página!',
+        visible: false,
+        visible_port_page: true,
         link:'https://reniervargas.com/todo-app/',
         code_link:'https://github.com/renier1989/todo-app',
         tech: [
@@ -251,12 +264,16 @@ export const portfolio = [
     },
     {
         id:'project-3',
+        order:3,
         img: hoobank,
         titleEn: 'HooBank',
         titleEs: 'HooBank',
         contentEn: 'A web page that I created using ReactJs and TailwindCss to practice both technologies. It looks awesome! ',
-        contentEs: 'Una pagina que cree usando ReactJs y TailwindCss para practicar ambas tecnologias. Se ve genial! ',
+        contentEs: 'Una página que cree usando ReactJs y TailwindCss para practicar ambas tecnologías. ¡Se ve genial! ',
+        longContentEn: 'HooBank is my creation using ReactJS, Node.js, and TailwindCSS, a static web page simulating financial information from a fictional bank. Its responsive design is mobile-friendly, and it allowed me to practice and enhance my skills in both technologies. It efficiently presents static information, making it a great showcase of my knowledge!',
+        longContentEs: 'HooBank es mi creación con ReactJS, Node.js y TailwindCSS, una página web estática que simula información financiera de un banco ficticio. Su diseño responsivo es amigable para dispositivos móviles, donde practiqué y reforcé mis habilidades en ambas tecnologías. Presenta información estática de manera ágil y eficiente, ¡una página genial para mostrar mis conocimientos!',
         visible: true,
+        visible_port_page: true,
         link:'http://reniervargas.com/hoobank/',
         code_link:'https://github.com/renier1989/hoobank',
         tech: [
@@ -281,18 +298,117 @@ export const portfolio = [
     },
     {
         id:'project-4',
-        img: hoobank,
-        titleEn: 'HooBank',
-        titleEs: 'HooBank',
-        contentEn: 'A web page that I created using ReactJs and TailwindCss to practice both technologies. It looks awesome! ',
-        contentEs: 'Una pagina que cree usando ReactJs y TailwindCss para practicar ambas tecnologias. Se ve genial! ',
+        order:4,
+        img: cvpage,
+        titleEn: 'Personal Web Page',
+        titleEs: 'Página web personal',
+        contentEn: 'This is my personal website, which I built using ReactJS and TailwindCSS to showcase my skills and portfolio of personal projects.',
+        contentEs: 'Esta es mi página web personal, que construí usando ReactJS y TailwindCss para poder mostrar mis habilidades y portafolio de proyectos personales.',
+        longContentEn: "This website is my personal space, developed using ReactJS and TailwindCSS to highlight my skills and showcase a collection of personal projects. Here, you can learn more about me, explore my web development experience, see some of the technologies I've used, and get in touch with me directly.",
+        longContentEs: 'Esta página web es mi espacio personal, desarrollada utilizando ReactJS y TailwindCSS para destacar mis habilidades y mostrar una colección de proyectos personales. Aquí, podrás conocer más sobre mí, explorar mi experiencia en desarrollo web, ver algunas de las tecnologías que he usado y podrás contactarte conmigo directamente.',
         visible: false,
-        link:'http://reniervargas.com/hoobank/',
-        code_link:'https://github.com/renier1989/hoobank',
+        visible_port_page: true,
+        link:'http://reniervargas.com/',
+        code_link:'https://github.com/renier1989/renier1989.github.io',
         tech: [
             {
                 id:'tech-1',
-                img:'img-tech1'
+                name:'ReactJs'
+            },
+            {
+                id:'tech-2',
+                name:'TailwindCSS'
+            },
+            {
+                id:'tech-3',
+                name:'Node.js'
+            }
+        ],
+    },
+    {
+        id:'project-5',
+        order:5,
+        img: todoappv2,
+        titleEn: 'Todo App V.2',
+        titleEs: 'App de tareas V.2',
+        contentEn: "This is version 2 of my tasks app, where I use new features of ReactJS hooks and delve deeper into Frontend development with this incredible technology.",
+        contentEs: 'Esta es la versión de 2 de mi app de tareas, donde uso nuevas funcionalidades de hooks de ReactJS y profundizó más en el desarrollo Frontend con esta increíble tecnología',
+        longContentEn: "This is version 2 of my tasks app, where I've incorporated exciting advancements in my skillset. I learned to use ReactJS Hooks, such as useContext and useEffect, taking my Frontend development to another level. Additionally, I've implemented new features like React-router-dom for smoother navigation and an enhanced user experience.",
+        longContentEs: 'Esta es la versión 2 de mi aplicación de tareas, donde he incorporado emocionantes novedades en mi arsenal de habilidades. Aprendí a utilizar los Hooks de ReactJS, como useContext y useEffect, lo que ha llevado mi desarrollo Frontend a otro nivel. Además, he implementado nuevas funcionalidades como React-router-dom para una navegación más fluida y una experiencia de usuario mejorada.',
+        visible: false,
+        visible_port_page: true,
+        link:'http://reniervargas.com/react-basic-course/',
+        code_link:'https://github.com/renier1989/react-basic-course',
+        tech: [
+            {
+                id:'tech-1',
+                name:'ReactJs'
+            },
+            {
+                id:'tech-2',
+                name:'CSS'
+            },
+            {
+                id:'tech-3',
+                name:'Node.js'
+            }
+        ],
+    },
+    {
+        id:'project-6',
+        order:6,
+        img: ecomerce,
+        titleEn: 'Ecommerce Simulation',
+        titleEs: 'Simulación de  Ecommerce',
+        contentEn: "This is version 2 of my tasks app, where I use new features of ReactJS hooks and delve deeper into Frontend development with this incredible technology.",
+        contentEs: 'Minimalist website where I put into practice some concepts and new ways of developing with ReactJS and TailwindCSS, implementing routes with React-router-dom and some interesting libraries to achieve the simulation and functionality of some E-commerce pages.',
+        longContentEn: "This is a minimalist website where I put into practice various concepts and new ways of development using ReactJS and TailwindCSS. Throughout this process, I strengthened my knowledge of React-router-dom, useContext, useEffect, and other advanced techniques to implement captivating functionalities inspired by E-commerce web pages. The combination of these technologies and libraries allowed me to create a seamless user experience and realistic simulations of diverse E-commerce pages.",
+        longContentEs: 'Esta es una página web minimalista donde puse en práctica diversos conceptos y nuevas formas de desarrollo con ReactJS y TailwindCSS. Durante este proceso, estuve fortaleciendo mis conocimientos sobre React-router-dom, useContext, useEffect y otras técnicas avanzadas para implementar fascinantes funcionalidades inspiradas en páginas web de comercio electrónico. La combinación de estas tecnologías y librerías me permitió crear una experiencia de usuario fluida y simulaciones realistas de diversas páginas de Ecommerce.',
+        visible: true,
+        visible_port_page: true,
+        link:'https://reniervargas.com/ecomerce/',
+        code_link:'https://github.com/renier1989/ecomerce',
+        tech: [
+            {
+                id:'tech-1',
+                name:'ReactJs'
+            },
+            {
+                id:'tech-2',
+                name:'TailwindCSS'
+            },
+            {
+                id:'tech-3',
+                name:'Node.js'
+            }
+        ],
+    },
+    {
+        id:'project-7',
+        order:7,
+        img: pokedux,
+        titleEn: 'PokeDux Web Page',
+        titleEs: 'Página web PokeDux',
+        contentEn: "With this page, I was exploring and expanding my knowledge in React. Here, I had my first encounter with Redux and its lifecycle. I learned to create and use middlewares and put into practice concepts of immutability, and I also implemented Redux Toolkit.",
+        contentEs: 'Con esta página estaba explorando y extendiendo más mis conocimientos en React, aquí tengo un primer contacto con Redux y su ciclo de vida, aprendí a crear y usar middlewares, pongo en práctica conceptos de inmutabilidad e implemente ReduxToolkIit.',
+        longContentEn: "With this page, I was dedicated to strengthening my knowledge in React and Redux. It was a valuable first encounter with Redux, where I learned about its lifecycle and how to create and use middlewares. Additionally, I put into practice essential concepts of immutability, which proved crucial when consuming APIs and efficiently managing the application state. The implementation of Redux Toolkit also enriched my experience in state management.",
+        longContentEs: 'Con esta página, estaba dedicado a fortalecer mis conocimientos en React y Redux. Fue un valioso primer contacto con Redux, donde aprendí sobre su ciclo de vida y cómo crear y utilizar middlewares. Además, puse en práctica importantes conceptos de inmutabilidad, lo cual resultó fundamental al consumir APIs y manejar el estado de la aplicación de manera eficiente. La implementación de Redux Toolkit también enriqueció mi experiencia en la gestión del estado de la aplicación.',
+        visible: false,
+        visible_port_page: true,
+        link:'https://reniervargas.com/pokedux/',
+        code_link:'https://github.com/renier1989/pokedux',
+        tech: [
+            {
+                id:'tech-1',
+                name:'ReactJs'
+            },
+            {
+                id:'tech-2',
+                name:'TailwindCSS'
+            },
+            {
+                id:'tech-3',
+                name:'Node.js'
             }
         ],
     },

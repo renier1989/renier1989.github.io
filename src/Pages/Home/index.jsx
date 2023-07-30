@@ -24,9 +24,9 @@ function HomePage() {
       {/* Here goes the Skills Experiences Portfolio Testimonials Contact Footer sections */}
       <div className="bg-first paddingX flexCenter darkMode">
         <div className="boxWidth">
+          <Portfolio language={cvinfo.language} />
           <Skills language={cvinfo.language} />
           <Experiences language={cvinfo.language} className="-z-10" />
-          <Portfolio language={cvinfo.language} />
           {/* <Testimonials /> */}
           <Contact language={cvinfo.language} />
         </div>
