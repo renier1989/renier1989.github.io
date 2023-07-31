@@ -91,7 +91,7 @@ function Portfolio() {
                 </div>
                 <img
                   alt={port.id}
-                  className=" w-full h-full object-cover object-center rounded"
+                  className="lg:w-1/2 w-full lg:h-auto  object-cover object-center rounded"
                   src={port.img}
                 />
               </div>
