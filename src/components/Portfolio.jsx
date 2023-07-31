@@ -63,10 +63,10 @@ function Portfolio({ language }) {
             }}
           >
             {portfolio.map((port) => (
-              <motion.div
+              <div
                 className={`${
                   !port.visible ? "hidden" : ""
-                } relative flex flex-wrap gap-3 `}
+                } flex flex-wrap gap-3 `}
                 key={port.id}
                 variants={{
                   hidden: { opacity: 0, scale: 0.8 },
@@ -125,7 +125,7 @@ function Portfolio({ language }) {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </motion.div>
         </div>
