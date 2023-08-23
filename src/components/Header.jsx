@@ -8,32 +8,67 @@ import { Link, useLocation } from "react-router-dom";
 function Header() {
   const location = useLocation();
   const isNotInHome = location.pathname != "/" ? true : false;
+  
 
   const cvinfo = useCvInfo();
 
-  const scrollToHash = useCallback(() => {
-    const hash = window.location.hash;
-    // console.log("🚀 ~ file: Header.jsx:16 ~ scrollToHash ~ hash:", hash)
+  // const scrollToHash = useCallback(() => {
+  //   const hash = window.location.hash;
+  //   // console.log("🚀 ~ file: Header.jsx:16 ~ scrollToHash ~ hash:", hash)
     
-    if (hash) {
-      const targetElement = document.querySelector(hash);
-      if (targetElement) {
-        const yOffset = 100; // Ajusta este valor si necesitas un offset específico para el scroll
-        const y =
-          targetElement.getBoundingClientRect().top +
-          window.pageYOffset +
-          yOffset;
-        window.scrollTo({ top: y, behavior: "smooth" });
-      }
-    }else{
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  }, []);
+  //   if (hash) {
+  //     const targetElement = document.querySelector(hash);
+  //     if (targetElement) {
+  //       const yOffset = 100; // Ajusta este valor si necesitas un offset específico para el scroll
+  //       const y =
+  //         targetElement.getBoundingClientRect().top +
+  //         window.pageYOffset +
+  //         yOffset;
+  //       window.scrollTo({ top: y, behavior: "smooth" });
+  //     }
+  //   }else{
+  //     window.scrollTo({ top: 0, behavior: "smooth" });
+  //   }
+  // }, []);
+
+  // useEffect(() => {
+  //   // Hace el scroll automático cada vez que la ruta cambia
+  //   scrollToHash();
+  // }, [location, scrollToHash]);
+
+
+
+
+
+
+
+
 
   useEffect(() => {
-    // Hace el scroll automático cada vez que la ruta cambia
-    scrollToHash();
-  }, [location, scrollToHash]);
+    // Si estamos en la página principal y un enlace fue clicado
+    // Previene la navegación predeterminada y realiza el scroll
+    const handleLinkClick = (event) => {
+      if (location.pathname === "/" && event.target.tagName === "A") {
+        event.preventDefault();
+        
+        const targetId = event.target.getAttribute("href");
+        const split = targetId.split("/");
+        let route = split.length > 1 ? split[1] : split[0];
+        const targetElement = document.querySelector(route);
+        if (targetElement) {
+          const yOffset = -100; // Ajusta el valor del offset según sea necesario
+          const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }else if(location.pathname === "/portfolio"){
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    };
+    document.addEventListener("click", handleLinkClick);
+    return () => {
+      document.removeEventListener("click", handleLinkClick);
+    };
+  }, [location]);
 
   const [toggle, setToggle] = useState(false);
   const contMenu = useRef(null);
@@ -62,12 +97,13 @@ function Header() {
               index !== navLinks - 1 ? "m-2" : ""
             }  transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth`}
           >
+            
             {isNotInHome ? (
-              <Link to={`/#${nav.id}`}>
+              <Link to={`/?#${nav.id}`}>
                 {cvinfo.language ? nav.titleEs : nav.titleEn}
               </Link>
             ) : (
-              <a href={`#${nav.id} `}>
+              <a href={`#${nav.id}`}>
                 {" "}
                 {cvinfo.language ? nav.titleEs : nav.titleEn}{" "}
               </a>
@@ -129,15 +165,15 @@ function Header() {
                 }`}
               >
                 {isNotInHome ? (
-                  <Link to={`/#${nav.id}`}>
-                    {cvinfo.language ? nav.titleEs : nav.titleEn}
-                  </Link>
-                ) : (
-                  <a href={`#${nav.id} `}>
-                    {" "}
-                    {cvinfo.language ? nav.titleEs : nav.titleEn}{" "}
-                  </a>
-                )}
+              <Link to={`/?#${nav.id}`}>
+                {cvinfo.language ? nav.titleEs : nav.titleEn}
+              </Link>
+            ) : (
+              <a href={`#${nav.id}`}>
+                {" "}
+                {cvinfo.language ? nav.titleEs : nav.titleEn}{" "}
+              </a>
+            )}
               </li>
             ))}
             <div className=" flex space-x-16 items-center mt-5">

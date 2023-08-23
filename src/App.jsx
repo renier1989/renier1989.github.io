@@ -1,5 +1,5 @@
 // import styles from "./constants/style"
-import { BrowserRouter, useRoutes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes, useRoutes } from "react-router-dom";
 import { Header, Footer } from "./components"
 // import { useState } from "react"
 import { Layout } from "./components/Layout";
@@ -23,16 +23,18 @@ function App() {
   
   return (
     <CvProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Layout>
+          
               <div className="boxWidth">
-                <Header 
-                  // language={cvinfo.language}
-                  // setLanguage={cvinfo.setLanguage}
-                  />
+                <Header />
               </div>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+              </Routes>
 
-                <AppRoutes />
+                {/* <AppRoutes /> */}
 
             {/* Here goes the About section */}
             <div className="bg-second flexCenter p-2 paragraph">
@@ -44,7 +46,7 @@ function App() {
             </div>
 
         </Layout>
-      </BrowserRouter>
+      </HashRouter>
     </CvProvider>
   )
 }
