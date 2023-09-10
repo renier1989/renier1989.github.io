@@ -17,6 +17,8 @@ import {
     , pokedux
     , ecomerce
     , cvpage
+    , ecoquest
+    , citas
 
 } from '../assets'
 
@@ -201,8 +203,8 @@ export const skills = [
 
 export const portfolio = [
     {
-        id:'project-1',
-        order:1,
+        id:'project-99',
+        order:99,
         img: trips,
         titleEn: 'Page Trips',
         titleEs: 'Página de Viajes',
@@ -230,8 +232,8 @@ export const portfolio = [
         ],
     },
     {
-        id:'project-2',
-        order:2,
+        id:'project-98',
+        order:98,
         img: todoapp,
         titleEn: 'Todo App',
         titleEs: 'App de Tareas',
@@ -263,8 +265,8 @@ export const portfolio = [
         ],
     },
     {
-        id:'project-3',
-        order:3,
+        id:'project-97',
+        order:97,
         img: hoobank,
         titleEn: 'HooBank',
         titleEs: 'HooBank',
@@ -272,7 +274,7 @@ export const portfolio = [
         contentEs: 'Una página que cree usando ReactJs y TailwindCss para practicar ambas tecnologías. ¡Se ve genial! ',
         longContentEn: 'HooBank is my creation using ReactJS, Node.js, and TailwindCSS, a static web page simulating financial information from a fictional bank. Its responsive design is mobile-friendly, and it allowed me to practice and enhance my skills in both technologies. It efficiently presents static information, making it a great showcase of my knowledge!',
         longContentEs: 'HooBank es mi creación con ReactJS, Node.js y TailwindCSS, una página web estática que simula información financiera de un banco ficticio. Su diseño responsivo es amigable para dispositivos móviles, donde practiqué y reforcé mis habilidades en ambas tecnologías. Presenta información estática de manera ágil y eficiente, ¡una página genial para mostrar mis conocimientos!',
-        visible: true,
+        visible: false,
         visible_port_page: true,
         link:'http://reniervargas.com/hoobank/',
         code_link:'https://github.com/renier1989/hoobank',
@@ -297,8 +299,8 @@ export const portfolio = [
         ],
     },
     {
-        id:'project-4',
-        order:4,
+        id:'project-1',
+        order:1,
         img: cvpage,
         titleEn: 'Personal Web Page',
         titleEs: 'Página web personal',
@@ -326,8 +328,8 @@ export const portfolio = [
         ],
     },
     {
-        id:'project-5',
-        order:5,
+        id:'project-96',
+        order:96,
         img: todoappv2,
         titleEn: 'Todo App V.2',
         titleEs: 'App de tareas V.2',
@@ -355,8 +357,8 @@ export const portfolio = [
         ],
     },
     {
-        id:'project-6',
-        order:6,
+        id:'project-3',
+        order:3,
         img: ecomerce,
         titleEn: 'Ecommerce Simulation',
         titleEs: 'Simulación de  Ecommerce',
@@ -365,6 +367,35 @@ export const portfolio = [
         longContentEn: "This is a minimalist website where I put into practice various concepts and new ways of development using ReactJS and TailwindCSS. Throughout this process, I strengthened my knowledge of React-router-dom, useContext, useEffect, and other advanced techniques to implement captivating functionalities inspired by E-commerce web pages. The combination of these technologies and libraries allowed me to create a seamless user experience and realistic simulations of diverse E-commerce pages.",
         longContentEs: 'Esta es una página web minimalista donde puse en práctica diversos conceptos y nuevas formas de desarrollo con ReactJS y TailwindCSS. Durante este proceso, estuve fortaleciendo mis conocimientos sobre React-router-dom, useContext, useEffect y otras técnicas avanzadas para implementar fascinantes funcionalidades inspiradas en páginas web de comercio electrónico. La combinación de estas tecnologías y librerías me permitió crear una experiencia de usuario fluida y simulaciones realistas de diversas páginas de Ecommerce.',
         visible: true,
+        visible_port_page: true,
+        link:'https://reniervargas.com/ecomerce/',
+        code_link:'https://github.com/renier1989/ecomerce',
+        tech: [
+            {
+                id:'tech-1',
+                name:'ReactJs'
+            },
+            {
+                id:'tech-2',
+                name:'TailwindCSS'
+            },
+            {
+                id:'tech-3',
+                name:'Node.js'
+            }
+        ],
+    },
+    {
+        id:'project-4',
+        order:4,
+        img: citas,
+        titleEn: 'Ecommerce Simulation',
+        titleEs: 'Citas Pacientes Veterinaria',
+        contentEn: "This is version 2 of my tasks app, where I use new features of ReactJS hooks and delve deeper into Frontend development with this incredible technology.",
+        contentEs: 'Minimalist website where I put into practice some concepts and new ways of developing with ReactJS and TailwindCSS, implementing routes with React-router-dom and some interesting libraries to achieve the simulation and functionality of some E-commerce pages.',
+        longContentEn: "This is a minimalist website where I put into practice various concepts and new ways of development using ReactJS and TailwindCSS. Throughout this process, I strengthened my knowledge of React-router-dom, useContext, useEffect, and other advanced techniques to implement captivating functionalities inspired by E-commerce web pages. The combination of these technologies and libraries allowed me to create a seamless user experience and realistic simulations of diverse E-commerce pages.",
+        longContentEs: 'Esta es una página web minimalista donde puse en práctica diversos conceptos y nuevas formas de desarrollo con ReactJS y TailwindCSS. Durante este proceso, estuve fortaleciendo mis conocimientos sobre React-router-dom, useContext, useEffect y otras técnicas avanzadas para implementar fascinantes funcionalidades inspiradas en páginas web de comercio electrónico. La combinación de estas tecnologías y librerías me permitió crear una experiencia de usuario fluida y simulaciones realistas de diversas páginas de Ecommerce.',
+        visible: false,
         visible_port_page: true,
         link:'https://reniervargas.com/ecomerce/',
         code_link:'https://github.com/renier1989/ecomerce',
@@ -397,6 +428,35 @@ export const portfolio = [
         visible_port_page: true,
         link:'https://reniervargas.com/pokedux/',
         code_link:'https://github.com/renier1989/pokedux',
+        tech: [
+            {
+                id:'tech-1',
+                name:'ReactJs'
+            },
+            {
+                id:'tech-2',
+                name:'TailwindCSS'
+            },
+            {
+                id:'tech-3',
+                name:'Node.js'
+            }
+        ],
+    },
+    {
+        id:'project-2',
+        order:2,
+        img: ecoquest,
+        titleEn: 'Ecoquest',
+        titleEs: 'Ecoquest',
+        contentEn: "I created this web app to raise awareness about everyday environmental impact. Make choices in response to eco questions. Developed with React.js and styled with Tailwind CSS.",
+        contentEs: 'Creé esta app web para concienciar sobre el impacto ambiental diario. Responde preguntas ecológicas y toma decisiones. Desarrollada con React.js y estilizada con Tailwind CSS',
+        longContentEn: "I developed this simple yet useful web application to raise awareness about the environmental impact of our everyday actions. In this app, you'll make choices in response to questions related to environmental impact. It was created using React.js and styled with Tailwind CSS.",
+        longContentEs: 'Desarrollé esta aplicación web sencilla pero útil para crear conciencia sobre el impacto ambiental de nuestras acciones cotidianas. En esta app, tomarás decisiones en respuesta a preguntas relacionadas con el impacto ambiental. Fue creada utilizando React.js y diseñada con Tailwind CSS.',
+        visible: true,
+        visible_port_page: true,
+        link:'https://reniervargas.com/ecoquest/',
+        code_link:'https://github.com/renier1989/ecoquest',
         tech: [
             {
                 id:'tech-1',

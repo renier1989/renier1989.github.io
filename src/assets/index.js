@@ -20,6 +20,8 @@ import todoappv2 from './todoappv2-project.png'
 import ecomerce from './ecomerce-project.png' 
 import pokedux from './pokedux-project.png' 
 import cvpage from './portfolio-project.png' 
+import ecoquest from './ecoquest_project.png' 
+import citas from './citas_project.png' 
 
 // iconos de logos
 import javascript from './javascript.png'
@@ -86,5 +88,7 @@ export {
     todoappv2,
     pokedux,
     ecomerce,
-    cvpage
+    cvpage,
+    ecoquest,
+    citas
 }

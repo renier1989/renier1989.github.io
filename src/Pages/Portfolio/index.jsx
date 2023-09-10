@@ -4,6 +4,7 @@ import { portfolio } from "../../constants";
 import { useCvInfo } from "../../context";
 function Portfolio() {
   const cvinfo = useCvInfo();
+  portfolio.sort((a,b) => a.order - b.order);
   return (
     <Layout>
       <div className="bg-first  darkMode paddingX">
