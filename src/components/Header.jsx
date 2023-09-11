@@ -50,15 +50,19 @@ function Header() {
     const handleLinkClick = (event) => {
       if (location.pathname === "/" && event.target.tagName === "A") {
         event.preventDefault();
-        
         const targetId = event.target.getAttribute("href");
-        const split = targetId.split("/");
-        let route = split.length > 1 ? split[1] : split[0];
-        const targetElement = document.querySelector(route);
-        if (targetElement) {
-          const yOffset = -100; // Ajusta el valor del offset según sea necesario
-          const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-          window.scrollTo({ top: y, behavior: "smooth" });
+        console.log(targetId);
+        if(targetId.includes("#")){
+          const split = targetId.split("/");
+          let route = split.length > 1 ? split[1] : split[0];
+          const targetElement = document.querySelector(route);
+          if (targetElement) {
+            const yOffset = -100; // Ajusta el valor del offset según sea necesario
+            const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: "smooth" });
+          }
+        }else{
+          window.open(targetId,'_blank');
         }
       }else if(location.pathname === "/portfolio"){
         window.scrollTo({ top: 0, behavior: "smooth" });
