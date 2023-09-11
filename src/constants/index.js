@@ -19,6 +19,8 @@ import {
     , cvpage
     , ecoquest
     , citas
+    , expenses
+    , crypto
 
 } from '../assets'
 
@@ -212,7 +214,7 @@ export const portfolio = [
         contentEs: 'Esta esa una pagina simple que cree cuando estaba aprendiendo a usar TailwindCss.',
         longContentEs: 'Desarrollé una página web de viajes utilizando solo HTML y TailwindCSS. Este proyecto estático cuenta con un diseño responsivo, amigable para dispositivos móviles, y muestra una selección de destinos turísticos y actividades emocionantes. Mi pasión por los viajes y la experiencia en desarrollo web se unieron para crear una interfaz minimalista y elegante.',
         longContentEn: 'I developed a travel website using only HTML and TailwindCSS. This static project features a responsive design, mobile-friendly layout, showcasing a selection of tourist destinations and exciting activities. My passion for travel and web development expertise came together to craft a minimalist and elegant interface.',
-        visible: true,
+        visible: false,
         visible_port_page: true,
         link:'https://reniervargas.com/trips/',
         code_link:'https://github.com/renier1989/trips',
@@ -407,6 +409,64 @@ export const portfolio = [
             {
                 id:'tech-2',
                 name:'TailwindCSS'
+            },
+            {
+                id:'tech-3',
+                name:'Node.js'
+            }
+        ],
+    },
+    {
+        id:'project-5',
+        order:5,
+        img: expenses,
+        titleEn: 'Expense Planner',
+        titleEs: 'Planificador de gastos',
+        contentEn: "A simple web app to manage expenses by setting a budget, tracking spending in common categories, and editing or deleting expenses. Developed with React.js and CSS.",
+        contentEs: 'Una sencilla app web para gestionar gastos mediante un presupuesto, rastrear gastos en categorías comunes y editar o eliminar gastos. Desarrollada con React.js y CSS',
+        longContentEn: "This is a simple web application where you can set a budget to manage your expenses more effectively. You can track your spending across common categories, add, edit, and delete expenses. After completing your plan, you can reset the application for a new budget. It was developed using React.js and CSS.",
+        longContentEs: 'Esta es una aplicación web sencilla donde puedes establecer un presupuesto para administrar tus gastos de manera más efectiva. Puedes hacer un seguimiento de tus gastos en categorías comunes, agregar, editar y eliminar gastos. Después de completar tu plan, puedes reiniciar la aplicación para comenzar una nueva planificación. Fue desarrollada utilizando React.js y CSS.',
+        visible: false,
+        visible_port_page: true,
+        link:'https://reniervargas.com/expense-track/',
+        code_link:'https://github.com/renier1989/expense-track',
+        tech: [
+            {
+                id:'tech-1',
+                name:'ReactJs'
+            },
+            {
+                id:'tech-2',
+                name:'Css'
+            },
+            {
+                id:'tech-3',
+                name:'Node.js'
+            }
+        ],
+    },
+    {
+        id:'project-6',
+        order:6,
+        img: crypto,
+        titleEn: 'Crypto Quotes',
+        titleEs: 'Cotizador de Criptos',
+        longContentEn: "Here, you can get quotes for the top 20 cryptocurrencies based on their market value and instantly compare them with a currency of your choice. You'll find quick, valuable information. This app was developed using React.js and Styled Components.",
+        longContentEs: 'Aquí, puedes obtener cotizaciones de las 20 principales criptomonedas según su valor de mercado y compararlas al instante con una moneda de tu elección. Encontrarás información rápida y valiosa. Esta aplicación fue desarrollada utilizando React.js y Styled Components.',
+        contentEn: "Get instant quotes for the top 20 cryptocurrencies and compare them with your chosen currency. Valuable information at your fingertips.",
+        contentEs: 'Obtén cotizaciones al instante de las 20 principales criptomonedas y compáralas con la moneda de tu elección. Información valiosa al alcance de tu mano.',
+        visible: true,
+        visible_port_page: true,
+        link:'https://reniervargas.com/expense-track/',
+        code_link:'https://github.com/renier1989/expense-track',
+        tech: [
+            {
+                id:'tech-1',
+                name:'ReactJs'
+            },
+            {
+                id:'tech-2',
+                name:'Styled Components'
             },
             {
                 id:'tech-3',

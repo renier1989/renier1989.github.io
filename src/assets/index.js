@@ -22,6 +22,8 @@ import pokedux from './pokedux-project.png'
 import cvpage from './portfolio-project.png' 
 import ecoquest from './ecoquest_project.png' 
 import citas from './citas_project.png' 
+import expenses from './expenses_project.png' 
+import crypto from './crypto_project.png' 
 
 // iconos de logos
 import javascript from './javascript.png'
@@ -90,5 +92,7 @@ export {
     ecomerce,
     cvpage,
     ecoquest,
-    citas
+    citas,
+    expenses,
+    crypto,
 }
