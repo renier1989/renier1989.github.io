@@ -43,6 +43,8 @@ import icon1w from './icono-1-white.png'
 import icon2w from './icono-2-white.png'
 import logo2g from './logo-2-gray.png'
 //docs for CVs
+// import cves from './public/docs/CV_ES.pdf'
+// import cven from './public/docs/CV_EN.pdf'
 import cves from '../../public/docs/CV_ES.pdf'
 import cven from '../../public/docs/CV_EN.pdf'
 

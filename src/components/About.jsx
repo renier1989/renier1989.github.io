@@ -4,6 +4,10 @@ import { aboutInfo } from '../constants';
 import SocialMediaIcons from './SocialMediaIcons';
 
 function About({language}) {
+  const cvfile  = language ? cves:cven;
+  const handleDownloadCV = ()=>{
+    window.open(cvfile)
+  }
   return (
     <section id="about" className="flex md:flex-row flex-col md:py-56 py-20 ">
 
@@ -114,9 +118,10 @@ function About({language}) {
         }}
         >
           <div className="my-1">
-          <a href={language ? cves : cven} target="_blank" className='font-semibold text-white bg-gradient-to-r from-second via-fourth to-red-600 rounded-md  py-3 px-6  transition duration-500'>
+          <div  onClick={handleDownloadCV} className='font-semibold text-white bg-gradient-to-r from-second via-fourth to-red-600 rounded-md  py-3 px-6  transition duration-500 cursor-pointer'>
             {language ? aboutInfo.buttonEs : aboutInfo.buttonEn}
-          </a>
+          </div>
+          
           </div>
       
 
