@@ -391,7 +391,7 @@ export const portfolio = [
         id:'project-4',
         order:4,
         img: citas,
-        titleEn: 'Ecommerce Simulation',
+        titleEn: 'Veterinary Patient Appointments',
         titleEs: 'Citas Pacientes Veterinaria',
         contentEn: "This is version 2 of my tasks app, where I use new features of ReactJS hooks and delve deeper into Frontend development with this incredible technology.",
         contentEs: 'Minimalist website where I put into practice some concepts and new ways of developing with ReactJS and TailwindCSS, implementing routes with React-router-dom and some interesting libraries to achieve the simulation and functionality of some E-commerce pages.',
@@ -399,8 +399,8 @@ export const portfolio = [
         longContentEs: 'Esta es una página web minimalista donde puse en práctica diversos conceptos y nuevas formas de desarrollo con ReactJS y TailwindCSS. Durante este proceso, estuve fortaleciendo mis conocimientos sobre React-router-dom, useContext, useEffect y otras técnicas avanzadas para implementar fascinantes funcionalidades inspiradas en páginas web de comercio electrónico. La combinación de estas tecnologías y librerías me permitió crear una experiencia de usuario fluida y simulaciones realistas de diversas páginas de Ecommerce.',
         visible: false,
         visible_port_page: true,
-        link:'https://reniervargas.com/ecomerce/',
-        code_link:'https://github.com/renier1989/ecomerce',
+        link:'https://reniervargas.com/citas-react/',
+        code_link:'https://github.com/renier1989/citas-react',
         tech: [
             {
                 id:'tech-1',
@@ -457,8 +457,8 @@ export const portfolio = [
         contentEs: 'Obtén cotizaciones al instante de las 20 principales criptomonedas y compáralas con la moneda de tu elección. Información valiosa al alcance de tu mano.',
         visible: true,
         visible_port_page: true,
-        link:'https://reniervargas.com/expense-track/',
-        code_link:'https://github.com/renier1989/expense-track',
+        link:'https://reniervargas.com/criptos-react/',
+        code_link:'https://github.com/renier1989/criptos-react',
         tech: [
             {
                 id:'tech-1',
