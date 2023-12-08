@@ -61,6 +61,7 @@ function Header() {
             const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
             window.scrollTo({ top: y, behavior: "smooth" });
           }
+          
         }else{
           window.open(targetId,'_blank');
         }
