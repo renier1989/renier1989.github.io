@@ -4,6 +4,9 @@ import { portfolio } from "../constants";
 import { Link } from "react-router-dom";
 
 function Portfolio({ language }) {
+  const salirDePagina = (url) =>{
+    window.open(url,'_blank');
+  }
   return (
     <section id="portfolio" className="pt-48 pb-48 ">
       <div className="py-10 px-2 bg-second rounded-md">
@@ -95,20 +98,18 @@ function Portfolio({ language }) {
                       )}
                     </h2>
                     <div className="tracking-widest  text-white text-[19px]  font-medium title-font space-x-8">
-                      <a
-                        target="_blank"
+                      <button                        
                         className="transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth"
-                        href={port.code_link}
+                        onClick={()=>salirDePagina(port.code_link)}
                       >
                         Code
-                      </a>
-                      <a
-                        target="_blank"
+                      </button>
+                      <button
                         className="transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth"
-                        href={port.link}
+                        onClick={()=>salirDePagina(port.link)}
                       >
                         Demo
-                      </a>
+                      </button>
                     </div>
                     <div className="leading-relaxed text-base text-start text-white">
                       {language ? (

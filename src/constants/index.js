@@ -66,7 +66,7 @@ export const navLinks = [
     {
         id: 'contact',
         titleEn: 'Contact',
-        titleEs: 'Contanto',
+        titleEs: 'Contacto',
         visible:true,
     },
 ];

@@ -49,6 +49,7 @@ function Header() {
     // Previene la navegación predeterminada y realiza el scroll
     const handleLinkClick = (event) => {
       if (location.pathname === "/" && event.target.tagName === "A") {
+        
         event.preventDefault();
         const targetId = event.target.getAttribute("href");
         console.log(targetId);
@@ -104,13 +105,14 @@ function Header() {
           >
             
             {isNotInHome ? (
+              
               <Link to={`/?#${nav.id}`}>
+                
                 {cvinfo.language ? nav.titleEs : nav.titleEn}
               </Link>
             ) : (
               <a href={`#${nav.id}`}>
-                {" "}
-                {cvinfo.language ? nav.titleEs : nav.titleEn}{" "}
+                {cvinfo.language ? nav.titleEs : nav.titleEn}
               </a>
             )}
           </li>
