@@ -4,6 +4,7 @@ import { navLinks } from "../constants";
 import { useRef } from "react";
 import { useCvInfo } from "../context";
 import { Link, useLocation } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 function Header() {
   const location = useLocation();
@@ -44,39 +45,42 @@ function Header() {
 
 
 
-  useEffect(() => {
-    // Si estamos en la página principal y un enlace fue clicado
-    // Previene la navegación predeterminada y realiza el scroll
-    const handleLinkClick = (event) => {
-      if (location.pathname === "/" 
-      // && event.target.tagName === "A"
-      ) {
+  // useEffect(() => {
+  //   // Si estamos en la página principal y un enlace fue clicado
+  //   // Previene la navegación predeterminada y realiza el scroll
+  //   const handleLinkClick = (event) => {
+  //     if (location.pathname === "/" 
+  //     ) {
         
-        event.preventDefault();
-        const targetId = event.target.getAttribute("href");
-        console.log(targetId);
-        if(targetId.includes("#")){
-          const split = targetId.split("/");
-          let route = split.length > 1 ? split[1] : split[0];
-          const targetElement = document.querySelector(route);
-          if (targetElement) {
-            const yOffset = -100; // Ajusta el valor del offset según sea necesario
-            const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            window.scrollTo({ top: y, behavior: "smooth" });
-          }
+  //       event.preventDefault();
+  //       const targetId = event.target.getAttribute("href");
+  //       console.log(targetId);
+  //       if(targetId.includes("#")){
+  //         const split = targetId.split("/");
+  //         let route = split.length > 1 ? split[1] : split[0];
+  //         const targetElement = document.querySelector(route);
+  //         if (targetElement) {
+  //           const yOffset = -100; // Ajusta el valor del offset según sea necesario
+  //           const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  //           window.scrollTo({ top: y, behavior: "smooth" });
+  //         }
           
-        }else{
-          window.open(targetId,'_blank');
-        }
-      }else if(location.pathname === "/portfolio"){
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
-    };
-    document.addEventListener("click", handleLinkClick);
-    return () => {
-      document.removeEventListener("click", handleLinkClick);
-    };
-  }, [location]);
+  //       }else{
+  //         window.open(targetId,'_blank');
+  //       }
+  //     }else if(location.pathname === "/portfolio"){
+  //       window.scrollTo({ top: 0, behavior: "smooth" });
+  //     }
+  //   };
+
+  //   document.addEventListener("click", handleLinkClick);
+    
+    
+  //   return () => {
+  //     document.removeEventListener("click", handleLinkClick);
+  //   };
+
+  // }, [location]);
 
   const [toggle, setToggle] = useState(false);
   const contMenu = useRef(null);
@@ -105,8 +109,12 @@ function Header() {
               index !== navLinks - 1 ? "m-2" : ""
             }  transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth`}
           >
+
+            <NavHashLink smooth  to={`/#${nav.id}`}>
+              {cvinfo.language ? nav.titleEs : nav.titleEn}
+            </NavHashLink>
             
-            {isNotInHome ? (
+            {/* {isNotInHome ? (
               
               <Link to={`/?#${nav.id}`}>
                 
@@ -116,7 +124,7 @@ function Header() {
               <a href={`#${nav.id}`}>
                 {cvinfo.language ? nav.titleEs : nav.titleEn}
               </a>
-            )}
+            )} */}
           </li>
         ))}
       </ul>

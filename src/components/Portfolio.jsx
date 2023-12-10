@@ -30,14 +30,14 @@ function Portfolio({ language }) {
                   <>
                     <i>
                       Estos algunos de los proyectos en los que he trabajado o
-                      he colaborado.
+                      he colaborado. <Link to={'/portfolio/'} className="font-bold text-gradient2 text-2xl transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth">Ver más.</Link>
                     </i>
                   </>
                 ) : (
                   <>
                     <i>
                       These are some of the projects I have worked on or
-                      collaborated on.
+                      collaborated on. <Link to={'/portfolio/'} className="font-bold text-gradient2 text-2xl transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth">See more.</Link>
                     </i>
                   </>
                 )}

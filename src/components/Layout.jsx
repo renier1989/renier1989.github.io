@@ -10,7 +10,7 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    backgroundColor: "white",
+    backgroundColor: "#1f2937",
   },
 };
 Modal.setAppElement("#root");
