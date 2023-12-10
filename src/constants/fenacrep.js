@@ -317,5 +317,191 @@ export const info_fena = [
             },
         ],
     },
+    {
+        id: `${crypto.randomUUID()}`,
+        order:9,
+        img: fena_procesador,
+        titleEn: 'Excel processor',
+        titleEs: 'Procesador Excel',
+        subtitle:'FENASIS',
+        contentEn: "I developed this module to provide both cooperatives and the systems team with a tool capable of analyzing and processing a significant amount of cooperative information in Excel format. Its purpose is to streamline and optimize the processes of uploading and updating data in our databases, ensuring that the information remains synchronized with its latest versions. This module allows the upload of financial statements, accounting manuals, updates of new cooperatives, or cooperatives that are no longer part of the Superintendence of Banking and Insurance group. Access to this module is exclusively for affiliated cooperatives and FENACREP systems personnel.",
+        contentEs: 'Desarrollé este módulo con el propósito de proporcionar tanto a las cooperativas como al equipo de sistemas una herramienta capaz de analizar y procesar una gran cantidad de información cooperativa en formato Excel. Su función es agilizar y optimizar los procesos de carga y actualización de datos en nuestras bases, manteniendo la información siempre sincronizada con sus últimas versiones. Este módulo permite la carga de estados financieros, manuales contables, actualizaciones de nuevas cooperativas o aquellas que ya no forman parte del grupo de la Superintendencia de Banca y Seguros. El acceso a este módulo está restringido exclusivamente a cooperativas afiliadas y al personal de sistemas de FENACREP.',
+        visible: true,
+        link:null,
+        tech: [
+            {
+                id:'tech-1',
+                name:'Laravel'
+            },
+            {
+                id:'tech-2',
+                name:'Livewire'
+            },
+            {
+                id:'tech-3',
+                name:'BulmaCss'
+            },
+            {
+                id:'tech-4',
+                name:'CSS'
+            },
+            {
+                id:'tech-6',
+                name:'JavaScript'
+            },
+            {
+                id:'tech-7',
+                name:'Webpack'
+            },
+        ],
+    },
+    {
+        id: `${crypto.randomUUID()}`,
+        order:11,
+        img: fena_intranet,
+        titleEn: 'Inventory',
+        titleEs: 'Inventario',
+        subtitle:'FENASIS',
+        contentEn: "At the request of Fenacrep's systems team, I created a comprehensive solution for managing the organization's inventory, encompassing equipment and various other implements. This module stands out for its ability to categorize the items recorded as part of the inventory. One of its peculiarities is the flexibility for each item to have customized fields, allowing for a maximum level of detail in registering different elements with fully adaptable fields as needed.",
+        contentEs: 'A petición del equipo de sistemas de Fenacrep, desarrollé una solución integral para la gestión de inventario de la organización, abarcando desde equipos hasta diversos implementos. Este módulo se distingue por su capacidad para categorizar los elementos que se registran como parte del inventario. Una de sus particularidades es la flexibilidad para que cada ítem pueda tener campos personalizados, permitiendo un nivel de detalle máximo en el registro de diferentes elementos con campos completamente adaptables según la necesidad.',
+        visible: false,
+        link:null,
+        tech: [
+            {
+                id:'tech-1',
+                name:'Laravel'
+            },
+            {
+                id:'tech-2',
+                name:'Livewire'
+            },
+            {
+                id:'tech-3',
+                name:'BulmaCss'
+            },
+            {
+                id:'tech-4',
+                name:'CSS'
+            },
+            {
+                id:'tech-6',
+                name:'JavaScript'
+            },
+            {
+                id:'tech-7',
+                name:'Webpack'
+            },
+        ],
+    },
+    {
+        id: `${crypto.randomUUID()}`,
+        order:10,
+        img: fena_intranet,
+        titleEn: 'Intranet',
+        titleEs: 'Intranet',
+        subtitle:'FENASIS',
+        contentEn: "At the request of Fenacrep's human resources department, I carried out a refactoring of the intranet module with new features. This tool provides all employees with quick access to relevant information about their status within the organization. They can view their attendance records, manage vacation requests, request permissions, and make special requests to the HR department. I designed this module to be a central access point for all things related to Fenacrep for employees. Additionally, it's segmented by roles, allowing department heads to view and manage their teams' vacation and permission requests, approving or rejecting requests and sending notifications about their status. It also facilitates remote time tracking for employees who have been granted this option.",
+        contentEs: 'A solicitud del departamento de recursos humanos de Fenacrep, llevé a cabo una reestructuración del módulo de la intranet, dotándolo de nuevas características. Esta herramienta permite a todos los empleados acceder fácilmente a información relevante sobre su situación dentro de la organización. Pueden visualizar sus registros de asistencia, gestionar solicitudes de vacaciones, pedir permisos, y realizar solicitudes especiales al departamento de recursos humanos. Diseñé este módulo para ser un punto central de acceso a todo lo relacionado con Fenacrep para los empleados. Además, está segmentado por roles, lo que permite a los jefes de área ver y gestionar las solicitudes de permisos y vacaciones de sus equipos, aprobando o rechazando solicitudes y enviando notificaciones sobre el estado de estas. También facilita que los empleados realicen registros remotos y puedan llevar un control de sus marcas de asistencia, si se les ha otorgado esta opción.',
+        visible: true,
+        link:null,
+        tech: [
+            {
+                id:'tech-1',
+                name:'Laravel'
+            },
+            {
+                id:'tech-2',
+                name:'Livewire'
+            },
+            {
+                id:'tech-3',
+                name:'BulmaCss'
+            },
+            {
+                id:'tech-4',
+                name:'CSS'
+            },
+            {
+                id:'tech-6',
+                name:'JavaScript'
+            },
+            {
+                id:'tech-7',
+                name:'Webpack'
+            },
+        ],
+    },
+    {
+        id: `${crypto.randomUUID()}`,
+        order:11,
+        img: fena_pagina,
+        titleEn: "Fenacrep's Official Website",
+        titleEs: 'Página Oficial de Fenacrep',
+        subtitle:'FENASIS',
+        contentEn: "I played a pivotal role in implementing and developing the structure and most visible functionalities on Fenacrep's official website. This project aimed to consolidate relevant public information from the backend for potential cooperatives interested in joining Fenacrep. I was actively involved in both front-end and back-end development, implementing enhancements and ensuring ongoing maintenance as per evolving needs. I integrated legally required features such as cookie acceptance, spaces for complaints and ARCO rights-related grievances regarding data protection, and requests for consent to privacy policies, among others. This project not only added value to Fenacrep's digital presence but also provided a significant digital approach for the affiliated cooperatives.on.",
+        contentEs: 'Tuve un rol fundamental en la implementación y desarrollo de la estructura y la mayoría de las funciones visibles en la página web oficial de Fenacrep. Este proyecto consistió en consolidar la información pública relevante del backend para posibles cooperativas interesadas en unirse a Fenacrep. Participé activamente tanto en el desarrollo del front-end como del back-end, además de implementar mejoras y realizar mantenimiento continuo conforme a las necesidades. Integré funciones necesarias por ley, como la aceptación de cookies, espacios de reclamaciones y quejas según los Derechos ARCO vinculados a la protección de datos, y solicitudes de consentimiento para las políticas de privacidad, entre otras. Este proyecto no solo agregó valor al entorno digital de Fenacrep, sino que también brindó un nuevo y significativo enfoque para las cooperativas afiliadas.',
+        visible: true,
+        link:'https://fenacrep.org/es',
+        tech: [
+            {
+                id:'tech-1',
+                name:'Laravel'
+            },
+            {
+                id:'tech-2',
+                name:'Livewire'
+            },
+            {
+                id:'tech-3',
+                name:'BulmaCss'
+            },
+            {
+                id:'tech-4',
+                name:'CSS'
+            },
+            {
+                id:'tech-6',
+                name:'JavaScript'
+            },
+            {
+                id:'tech-7',
+                name:'Webpack'
+            },
+        ],
+    },
+    {
+        id: `${crypto.randomUUID()}`,
+        order:12,
+        img: fena_escuela,
+        titleEn: "Cooperative Education and Training School",
+        titleEs: 'Escuela de Educación y Formación Cooperativa (EEFC)',
+        subtitle:'FENASIS',
+        contentEn: "My involvement in the development of the official page of the Cooperative Education and Training School (EEFC) was significant in implementing new features. I contributed to the integration of a gamified achievement system that rewarded each student's progress in their courses, encouraging interaction on the platform. This implementation involved creating back-end logics to ensure coherence and quality in the user experience. The initiative aimed to enhance cooperative education through innovative methodologies. The inclusion of achievements, granted for various interactions on the page such as logging in, marking favorites, or participating in forums, was part of my contribution. Likewise, my work focused on ensuring information cohesion, covering details from courses to the complete student experience. It was an enriching project that not only improved the learning experience but also boosted the educational potential of the cooperative movement, emphasizing the importance of constant innovation in this field.",
+        contentEs: 'Mi participación en el desarrollo de la página oficial de la Escuela de Educación y Formación Cooperativa (EEFC) fue significativa en la implementación de nuevas características. Contribuí en la integración de un sistema de logros gamificados que recompensaba cada avance de los estudiantes en sus cursos, fomentando la interacción en la plataforma. Esta implementación involucró la creación de lógicas back-end para garantizar la coherencia y calidad de la experiencia del usuario. La iniciativa buscaba potenciar la educación cooperativa mediante metodologías innovadoras. La inclusión de estos logros, otorgados por diversas interacciones en la página, como iniciar sesión, marcar favoritos o participar en foros, fue parte de mi aporte. Asimismo, mi trabajo se centró en asegurar la cohesión de la información, abarcando desde detalles de los cursos hasta la experiencia completa del estudiante. Fue un proyecto enriquecedor que no solo permitió mejorar la experiencia de aprendizaje, sino que impulsó el potencial educativo del movimiento cooperativo, destacando la importancia de la constante innovación en este ámbito.',
+        visible: true,
+        link:'https://escuelacooperativa.net/',
+        tech: [
+            {
+                id:'tech-1',
+                name:'Laravel'
+            },
+            {
+                id:'tech-2',
+                name:'Livewire'
+            },
+            {
+                id:'tech-4',
+                name:'CSS'
+            },
+            {
+                id:'tech-6',
+                name:'JavaScript'
+            },
+            {
+                id:'tech-7',
+                name:'Webpack'
+            },
+        ],
+    },
     
 ]
