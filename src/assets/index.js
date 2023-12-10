@@ -24,6 +24,20 @@ import ecoquest from './ecoquest_project.png'
 import citas from './citas_project.png' 
 import expenses from './expenses_project.png' 
 import crypto from './crypto_project.png' 
+import fenacrep from './fenacrep.png' 
+// portafolio fenacrep
+import fena_micoopac from './fena/1-fena-micoopac.png'
+import fena_acortador from './fena/2-fena-acortador.png'
+import fena_colaboracion from './fena/3-fena-colaboracion.png'
+import fena_encuestas from './fena/4-fena-encuentas.png'
+import fena_inclusion from './fena/5-fena-inclusion.png'
+import fena_intranet from './fena/6-fena-intranet.png'
+import fena_procesador from './fena/7-fena-procesador.png'
+import fena_mensajeria from './fena/8-fena-mensajeria.png'
+import fena_soporte from './fena/9-fena-soporte.png'
+import fena_pagina from './fena/10-fena-pagina.png'
+import fena_escuela from './fena/11-fena-escuela.png'
+import fena_encuestas_front from './fena/4.1-fena-encuetas-font.png'
 
 // iconos de logos
 import javascript from './javascript.png'
@@ -95,4 +109,17 @@ export {
     citas,
     expenses,
     crypto,
+    fenacrep,
+    fena_micoopac,
+    fena_acortador,
+    fena_colaboracion,
+    fena_encuestas,
+    fena_encuestas_front,
+    fena_inclusion,
+    fena_intranet,
+    fena_procesador,
+    fena_mensajeria,
+    fena_soporte,
+    fena_pagina,
+    fena_escuela,
 }

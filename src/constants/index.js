@@ -20,7 +20,8 @@ import {
     , ecoquest
     , citas
     , expenses
-    , crypto
+    , crypto,
+    fenacrep
 
 } from '../assets'
 
@@ -204,6 +205,44 @@ export const skills = [
 ];
 
 export const portfolio = [
+    {
+        id:'project-11',
+        order:1,
+        img: fenacrep,
+        titleEn: 'FENACREP',
+        titleEs: 'FENACREP',
+        contentEn: "In my role as Programmer Analyst at Fenacrep, I focused on developing essential software and tools for cooperatives. I utilized Laravel, Bulma, VueJS, transitioning to Livewire, employing Git for control, and AWS for deployment, aiming for efficient and adaptable digital solutions.",
+        contentEs: 'Como Analista Programador en Fenacrep, me enfoqué en desarrollar software y herramientas esenciales para cooperativas. Utilicé Laravel, Bulma, y VueJS, migrando a Livewire, con Git para control y AWS para despliegue, buscando soluciones digitales eficientes y adaptables.',
+        longContentEn: "In my role as a Programmer Analyst at Fenacrep, my primary focus was on developing software and critical internal and external tools for the federation and its associated cooperatives. I took charge of creating applications that enabled efficient management of information for these cooperatives, implementing internal tools for data planning and management, and processing information through Laravel to enhance our databases.        My responsibilities revolved around maintaining and enhancing these implementations with ongoing updates. I worked with a technological stack that comprised Laravel as the backend, Bulma or pure CSS for styling, and initially VueJS, later transitioning to Livewire for the frontend. All of this was managed using Git for version control and deployment on AWS servers.        My goal was to deliver digital solutions that optimized internal operations and expanded the reach of the cooperatives, continually evolving these tools to adapt to new requirements.        ",
+        longContentEs: 'En mi rol como Analista Programador en Fenacrep, mi enfoque era el desarrollo de software y herramientas internas y externas clave para la federación y sus cooperativas asociadas. Me responsabilicé de crear aplicaciones para que las cooperativas gestionaran su información de manera eficiente, implementar herramientas internas para la planificación y manejo de datos, y procesar información a través de Laravel para enriquecer nuestras bases de datos.Mi labor se centraba en mantener y mejorar estas implementaciones con actualizaciones constantes. Trabajé con un stack tecnológico que involucraba Laravel como backend, Bulma o CSS puro para estilos, y VueJS, migrando después a Livewire para el frontend. Todo esto se gestionaba con Git para control de versiones y despliegue en servidores de AWS. Mi objetivo era brindar soluciones digitales que optimizaran el trabajo interno y expandieran el alcance de las cooperativas, siempre evolucionando las herramientas para adaptarse a nuevas necesidades.',
+        visible: true,
+        visible_port_page: true,
+        link: null,
+        code_link:null,
+        internal:'/portfolio/fenacrep',
+        tech: [
+            {
+                id:'tech-1',
+                name:'Laravel'
+            },
+            {
+                id:'tech-2',
+                name:'Livewire'
+            },
+            {
+                id:'tech-4',
+                name:'BulmaCss'
+            },
+            {
+                id:'tech-5',
+                name:'VueJs'
+            },
+            {
+                id:'tech-3',
+                name:'Node.js'
+            },
+        ],
+    },
     {
         id:'project-99',
         order:99,
@@ -505,7 +544,7 @@ export const portfolio = [
     },
     {
         id:'project-2',
-        order:2,
+        order:99,
         img: ecoquest,
         titleEn: 'Ecoquest',
         titleEs: 'Ecoquest',
@@ -513,7 +552,7 @@ export const portfolio = [
         contentEs: 'Creé esta app web para concienciar sobre el impacto ambiental diario. Responde preguntas ecológicas y toma decisiones. Desarrollada con React.js y estilizada con Tailwind CSS',
         longContentEn: "I developed this simple yet useful web application to raise awareness about the environmental impact of our everyday actions. In this app, you'll make choices in response to questions related to environmental impact. It was created using React.js and styled with Tailwind CSS.",
         longContentEs: 'Desarrollé esta aplicación web sencilla pero útil para crear conciencia sobre el impacto ambiental de nuestras acciones cotidianas. En esta app, tomarás decisiones en respuesta a preguntas relacionadas con el impacto ambiental. Fue creada utilizando React.js y diseñada con Tailwind CSS.',
-        visible: true,
+        visible: false,
         visible_port_page: true,
         link:'https://reniervargas.com/ecoquest/',
         code_link:'https://github.com/renier1989/ecoquest',
@@ -532,6 +571,7 @@ export const portfolio = [
             }
         ],
     },
+
 ];
 
 export const experiences = [

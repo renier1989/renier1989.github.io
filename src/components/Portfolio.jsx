@@ -4,9 +4,9 @@ import { portfolio } from "../constants";
 import { Link } from "react-router-dom";
 
 function Portfolio({ language }) {
-  const salirDePagina = (url) =>{
-    window.open(url,'_blank');
-  }
+  const salirDePagina = (url) => {
+    window.open(url, "_blank");
+  };
   return (
     <section id="portfolio" className="pt-48 pb-48 ">
       <div className="py-10 px-2 bg-second rounded-md">
@@ -33,7 +33,6 @@ function Portfolio({ language }) {
                       Estos algunos de los proyectos en los que he trabajado o
                       he colaborado.
                     </i>
-                    
                   </>
                 ) : (
                   <>
@@ -78,40 +77,74 @@ function Portfolio({ language }) {
               >
                 <div className="my-2">
                   <div className="darkMode h-full dark:bg-gray-600 p-6 rounded-lg mx-2  ">
-                    <img
-                      className=" rounded w-full object-cover object-center mb-6"
-                      src={port.img}
-                      alt={port.id}
-                    />
+                    {port.internal ? (
+                      <Link to={port.internal}>
+                        <img
+                          className=" rounded w-full object-cover object-center mb-6"
+                          src={port.img}
+                          alt={port.id}
+                        />
+                      </Link>
+                    ) : (
+                      <img
+                        className=" rounded w-full object-cover object-center mb-6"
+                        src={port.img}
+                        alt={port.id}
+                      />
+                    )}
 
                     <h2 className="text-lg  font-medium  text-gradient2 title-font mb-2 text-white">
                       {language ? (
                         <div>
-                          <p className="text-2xl ">{port.titleEs}</p>
+                          <p className="text-2xl ">
+                            {port.internal ? (
+                              <Link to={port.internal}>{port.titleEn}</Link>
+                            ) : (
+                              <p>{port.titleEs}</p>
+                            )}
+                          </p>
                         </div>
                       ) : (
                         <div>
                           <div>
-                            <p className="text-2xl ">{port.titleEn}</p>
+                            <p className="text-2xl ">
+                              {port.internal ? (
+                                <Link to={port.internal}>{port.titleEn}</Link>
+                              ) : (
+                                <p>{port.titleEn}</p>
+                              )}
+                            </p>
                           </div>
                         </div>
                       )}
                     </h2>
                     <div className="tracking-widest  text-white text-[19px]  font-medium title-font space-x-8">
-                      <button                        
-                        className="transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth"
-                        onClick={()=>salirDePagina(port.code_link)}
-                      >
-                        Code
-                      </button>
-                      <button
-                        className="transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth"
-                        onClick={()=>salirDePagina(port.link)}
-                      >
-                        Demo
-                      </button>
+                      {port.code_link !== null ? (
+                        <button
+                          className="transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth"
+                          onClick={() => salirDePagina(port.code_link)}
+                        >
+                          Code
+                        </button>
+                      ) : null}
+                      {port.link ? (
+                        <button
+                          className="transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth"
+                          onClick={() => salirDePagina(port.link)}
+                        >
+                          Demo
+                        </button>
+                      ) : null}
+
+                      {/* {port.internal ? (
+                        <Link to={port.internal}
+                          className="transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth"
+                        >
+                          Info
+                        </Link>
+                      ) : null} */}
                     </div>
-                    <div className="leading-relaxed text-base text-start text-white">
+                    <div className="leading-relaxed text-base  text-white text-justify">
                       {language ? (
                         <div>
                           <p className="mt-7">{port.contentEs}</p>
@@ -131,15 +164,16 @@ function Portfolio({ language }) {
           </motion.div>
         </div>
         <div className="mt-3">
-          <Link
-            to="/portfolio"
-            
-          >
-            {language ? 
-              <p className="font-bold text-gradient2 text-2xl transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth">Ver más.</p>
-            :
-              <p className="font-bold text-gradient2 text-2xl transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth">See more.</p>
-            }
+          <Link to="/portfolio">
+            {language ? (
+              <p className="font-bold text-gradient2 text-2xl transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth">
+                Ver más.
+              </p>
+            ) : (
+              <p className="font-bold text-gradient2 text-2xl transition duration-500 hover:underline hover:underline-offset-4 hover:decoration-fourth">
+                See more.
+              </p>
+            )}
           </Link>
         </div>
       </div>

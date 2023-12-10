@@ -48,7 +48,9 @@ function Header() {
     // Si estamos en la página principal y un enlace fue clicado
     // Previene la navegación predeterminada y realiza el scroll
     const handleLinkClick = (event) => {
-      if (location.pathname === "/" && event.target.tagName === "A") {
+      if (location.pathname === "/" 
+      // && event.target.tagName === "A"
+      ) {
         
         event.preventDefault();
         const targetId = event.target.getAttribute("href");
@@ -86,7 +88,7 @@ function Header() {
   document.addEventListener("mousedown", closeOpenMenu);
 
   return (
-    <nav className="bg-second  fixed flex py-2 felxCenter justify-between items-center paddingX w-full darkText z-50 ">
+    <nav className={`bg-second  fixed flex py-2 felxCenter justify-between items-center paddingX w-full darkText ${cvinfo.modal ? 'z-0':'z-50'}`} >
       <Link to="/">
         <img src={icon2w} alt="logo" className="w-[50px]" />
       </Link>
