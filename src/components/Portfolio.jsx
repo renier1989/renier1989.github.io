@@ -2,11 +2,10 @@ import { motion } from "framer-motion";
 // import { trips, todoapp, hoobank } from "../assets";
 import { portfolio } from "../constants";
 import { Link } from "react-router-dom";
+import { useCvInfo } from "../context";
 
 function Portfolio({ language }) {
-  const salirDePagina = (url) => {
-    window.open(url, "_blank");
-  };
+  const {salirDePagina} = useCvInfo()
   return (
     <section id="portfolio" className="pt-48 pb-48 ">
       <div className="py-10 px-2 bg-second rounded-md">

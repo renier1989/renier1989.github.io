@@ -7,10 +7,13 @@ function CvProvider({ children }) {
   const [language, setLanguage] = useState(false);
   const [modal, setModal] = useState(false);
   const [infoModal, setInfoModal] = useState({});
-
   const handleOpenModal = (info) => {
     setModal(!modal);
     setInfoModal(info);
+  };
+
+  const salirDePagina = (url) => {
+    window.open(url, "_blank");
   };
 
   
@@ -28,6 +31,7 @@ function CvProvider({ children }) {
         handleOpenModal,
         closeModal,
         infoModal,
+        salirDePagina
       }}
     >
       {children}
