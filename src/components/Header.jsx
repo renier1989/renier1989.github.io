@@ -114,17 +114,7 @@ function Header() {
               {cvinfo.language ? nav.titleEs : nav.titleEn}
             </NavHashLink>
             
-            {/* {isNotInHome ? (
-              
-              <Link to={`/?#${nav.id}`}>
-                
-                {cvinfo.language ? nav.titleEs : nav.titleEn}
-              </Link>
-            ) : (
-              <a href={`#${nav.id}`}>
-                {cvinfo.language ? nav.titleEs : nav.titleEn}
-              </a>
-            )} */}
+            
           </li>
         ))}
       </ul>
@@ -181,16 +171,9 @@ function Header() {
                   index !== navLinks - 1 ? "mb-2" : ""
                 }`}
               >
-                {isNotInHome ? (
-              <Link to={`/?#${nav.id}`}>
-                {cvinfo.language ? nav.titleEs : nav.titleEn}
-              </Link>
-            ) : (
-              <a href={`#${nav.id}`}>
-                {" "}
-                {cvinfo.language ? nav.titleEs : nav.titleEn}{" "}
-              </a>
-            )}
+                <NavHashLink smooth  to={`/#${nav.id}`}>
+              {cvinfo.language ? nav.titleEs : nav.titleEn}
+            </NavHashLink>
               </li>
             ))}
             <div className=" flex space-x-16 items-center mt-5">
