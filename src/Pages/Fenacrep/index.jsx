@@ -23,7 +23,7 @@ function Fenacrep() {
                 </p>
               ) : (
                 <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-white">
-                  "During my tenure as a Programmer Analyst at FENACREP, I significantly contributed to the development and collaborated across multiple platforms, such as FENASIS (Fenacrep's internal website), the official FENACREP website, the official Cooperative School webpage, among others. This portfolio showcases a representative sample of the projects and contributions I had the privilege to undertake during my time at the organization.
+                  During my tenure as a Programmer Analyst at FENACREP, I significantly contributed to the development and collaborated across multiple platforms, such as FENASIS (Fenacrep's internal website), the official FENACREP website, the official Cooperative School webpage, among others. This portfolio showcases a representative sample of the projects and contributions I had the privilege to undertake during my time at the organization.
                 </p>
               )}
             </div>
