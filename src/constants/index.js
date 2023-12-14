@@ -21,7 +21,11 @@ import {
     , citas
     , expenses
     , crypto,
-    fenacrep
+    fenacrep,
+    typescript,
+    git,
+    docker,
+    css
 
 } from '../assets'
 
@@ -201,6 +205,46 @@ export const skills = [
         img: bootstrap,
         visible : true,
         current : false,
+    },
+    {
+        id: 'logo-9',
+        title: 'Typescript',
+        yearsEn: '1 Years',
+        yearsEs: '1 Años',
+        stat: '50',
+        img: typescript,
+        visible : true,
+        current : true,
+    },
+    {
+        id: 'logo-10',
+        title: 'Git',
+        yearsEn: '6 Years',
+        yearsEs: '6 Años',
+        stat: '95',
+        img: git,
+        visible : true,
+        current : true,
+    },
+    {
+        id: 'logo-11',
+        title: 'Docker',
+        yearsEn: '1 Years',
+        yearsEs: '1 Años',
+        stat: '50',
+        img: docker,
+        visible : true,
+        current : true,
+    },
+    {
+        id: 'logo-12',
+        title: 'CSS',
+        yearsEn: '5 Years',
+        yearsEs: '5 Años',
+        stat: '79',
+        img: css,
+        visible : true,
+        current : true,
     },
 ];
 

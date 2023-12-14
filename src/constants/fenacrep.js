@@ -1,4 +1,4 @@
-import { fena_acortador, fena_colaboracion, fena_encuestas, fena_encuestas_front, fena_escuela, fena_inclusion, fena_intranet, fena_mensajeria, fena_micoopac, fena_pagina, fena_procesador, fena_soporte } from "../assets"
+import { fena_acortador, fena_colaboracion, fena_encuestas, fena_encuestas_front, fena_escuela, fena_inclusion, fena_intranet, fena_inventario, fena_mensajeria, fena_micoopac, fena_pagina, fena_procesador, fena_soporte, fena_votaciones } from "../assets"
 
 export const info_fena = [
     {
@@ -358,13 +358,13 @@ export const info_fena = [
     {
         id: `${crypto.randomUUID()}`,
         order:11,
-        img: fena_intranet,
+        img: fena_inventario,
         titleEn: 'Inventory',
         titleEs: 'Inventario',
         subtitle:'FENASIS',
         contentEn: "At the request of Fenacrep's systems team, I created a comprehensive solution for managing the organization's inventory, encompassing equipment and various other implements. This module stands out for its ability to categorize the items recorded as part of the inventory. One of its peculiarities is the flexibility for each item to have customized fields, allowing for a maximum level of detail in registering different elements with fully adaptable fields as needed.",
         contentEs: 'A petición del equipo de sistemas de Fenacrep, desarrollé una solución integral para la gestión de inventario de la organización, abarcando desde equipos hasta diversos implementos. Este módulo se distingue por su capacidad para categorizar los elementos que se registran como parte del inventario. Una de sus particularidades es la flexibilidad para que cada ítem pueda tener campos personalizados, permitiendo un nivel de detalle máximo en el registro de diferentes elementos con campos completamente adaptables según la necesidad.',
-        visible: false,
+        visible: true,
         link:null,
         tech: [
             {
@@ -500,6 +500,41 @@ export const info_fena = [
             {
                 id:'tech-7',
                 name:'Webpack'
+            },
+        ],
+    },
+
+    {
+        id: `${crypto.randomUUID()}`,
+        order:13,
+        img: fena_votaciones,
+        titleEn: 'Voting System',
+        titleEs: 'Sistema de votación',
+        subtitle:'WEB PAGE',
+        contentEn: "I developed this voting system in response to a specific request from Fenacrep. It was designed to empower our affiliated cooperatives to democratically elect their committees and managerial boards using an interactive and innovative approach. This solution comprises three core platforms. The first is the administrative platform, tailored for the administrator to record the voting process, enable its phases, register candidates, define vacancies, and configure the number of eligible applicants. Moreover, it allows for the registration of participants authorized to vote and displays real-time results throughout the electoral process. The second platform is the voting panel, created for an interactive experience on touch screens. Participants, upon exercising their voting rights, need to identify themselves using their ID documents. This enables them to vote if they are registered and eligible, navigating through different positions and selecting their preferred candidates. The final platform is an interactive screen that displays the voting process in real-time. It was designed to be projected during the election day, comprising multiple screens offering voting instructions, showcasing candidates, vacancies, and, at the end of the process, presenting the results. Importantly, these screens are managed from the administrative platform, allowing the administrator to alter the displayed information at any time. These three platforms are interconnected and synchronized in real-time to provide a seamless and innovative experience. This project was developed using technologies such as Laravel, Livewire, Tailwind CSS, Alpine.js, and Pusher.",
+        contentEs: 'Desarrollé este sistema de votación como respuesta a la necesidad expresada por la Fenacrep. Fue concebido para otorgar a nuestras cooperativas afiliadas la capacidad de elegir sus comités y consejos gerenciales de manera interactiva e innovadora. Esta solución se compone de tres plataformas fundamentales. La primera es la plataforma administrativa, diseñada para que el administrador registre el proceso de votación, habilite sus fases, registre a los candidatos, defina las vacantes y configure el número de postulantes elegibles. Además, permite registrar a los participantes habilitados para votar y visualizar, en tiempo real, los resultados del proceso electoral durante su ejecución. La segunda plataforma es el panel de votación, creado para una experiencia interactiva en pantallas táctiles, donde los participantes, al ejercer su derecho al voto, deben identificarse con su documento de identidad. Esto les permite votar si están registrados y habilitados, pasando por las distintas vacantes y seleccionando a sus candidatos de preferencia. La última plataforma es una pantalla interactiva que muestra, en tiempo real, el proceso de votación. Fue diseñada para ser proyectada durante la jornada electoral, con múltiples pantallas que ofrecen instrucciones de votación, muestran a los candidatos, las vacantes y, al finalizar el proceso, presentan los resultados. Es importante destacar que estas pantallas son gestionadas desde la plataforma administrativa, lo que permite al encargado cambiar en cualquier momento la información proyectada. Estas tres plataformas están interconectadas y sincronizadas en tiempo real para ofrecer una experiencia fluida e innovadora. Este proyecto se desarrolló utilizando tecnologías como Laravel, Livewire, Tailwind CSS, Alpine.js y Pusher.',
+        visible: true,
+        link:null,
+        tech: [
+            {
+                id:'tech-1',
+                name:'Laravel'
+            },
+            {
+                id:'tech-2',
+                name:'Livewire'
+            },
+            {
+                id:'tech-3',
+                name:'Tailwind CSS'
+            },
+            {
+                id:'tech-6',
+                name:'AlpineJS'
+            },
+            {
+                id:'tech-7',
+                name:'Vite'
             },
         ],
     },

@@ -38,16 +38,33 @@ import fena_soporte from './fena/9-fena-soporte.png'
 import fena_pagina from './fena/10-fena-pagina.png'
 import fena_escuela from './fena/11-fena-escuela.png'
 import fena_encuestas_front from './fena/4.1-fena-encuetas-font.png'
+import fena_inventario from './fena/12-fena-inventario.png'
+import fena_votaciones from './fena/13-votaciones.png'
 
 // iconos de logos
-import javascript from './javascript.png'
-import bootstrap from './bootstrap.png'
-import laravel from './laravel.png'
+// import javascript from './javascript.png'
+// import bootstrap from './bootstrap.png'
+// import laravel from './laravel.png'
+// import mysql from './mysql.png'
+// import php from './php.png'
 import livewire from './livewire.png'
-import mysql from './mysql.png'
-import php from './php.png'
-import reactjs from './reactjs.png'
-import tailwind from './tailwind.png'
+// import reactjs from './reactjs.png'
+// import tailwind from './tailwind.png'
+// new
+
+import reactjs from './skills/React.svg'
+import tailwind from './skills/Tailwindcss.svg'
+import css from './skills/Css.svg'
+import docker from './skills/Docker.svg'
+import php from './skills/PHP.svg'
+import typescript from './skills/Typescript.svg'
+import laravel from './skills/Laravel.svg'
+import javascript from './skills/Javascript.svg'
+import bootstrap from './skills/Bootstrap.svg'
+import mysql from './skills/Mysql.svg'
+import git from './skills/Git.svg'
+
+
 
 // icons and logos for web page RENIER VARGAS
 import logo1 from './logo-1.png'
@@ -122,4 +139,10 @@ export {
     fena_soporte,
     fena_pagina,
     fena_escuela,
+    fena_inventario,
+    fena_votaciones,
+    typescript,
+    git,
+    docker,
+    css
 }
