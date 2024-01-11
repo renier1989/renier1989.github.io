@@ -24,6 +24,7 @@ import ecoquest from './ecoquest_project.png'
 import citas from './citas_project.png' 
 import expenses from './expenses_project.png' 
 import crypto from './crypto_project.png' 
+import taskmanager from './taskmanager_proyect.png' 
 import fenacrep from './fenacrep.png' 
 // portafolio fenacrep
 import fena_micoopac from './fena/1-fena-micoopac.png'
@@ -144,5 +145,6 @@ export {
     typescript,
     git,
     docker,
-    css
+    css,
+    taskmanager,
 }
