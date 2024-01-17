@@ -627,7 +627,7 @@ export const portfolio = [
       "Get instant quotes for the top 20 cryptocurrencies and compare them with your chosen currency. Valuable information at your fingertips.",
     contentEs:
       "Obtén cotizaciones al instante de las 20 principales criptomonedas y compáralas con la moneda de tu elección. Información valiosa al alcance de tu mano.",
-    visible: true,
+    visible: false,
     visible_port_page: true,
     link: "https://reniervargas.com/criptos-react/",
     code_link: "https://github.com/renier1989/criptos-react",
