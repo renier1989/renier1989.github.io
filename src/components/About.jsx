@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion'
-import {renier, renierbg, renier2,cves, cven } from '../assets';
+import {renier3,cves, cven } from '../assets';
 import { aboutInfo } from '../constants';
 import SocialMediaIcons from './SocialMediaIcons';
 
@@ -22,7 +22,7 @@ function About({language}) {
         <div className="md:relative z-0 md:ml-20 before:absolute before:-top-10 before:-left-10 md:before:w-full before:max-w-[400px] before:h-full before:border-2 before:rounded-md md:before:border-fourth before:border-third before:z-[-1] 
         ease-in-out hover:before:translate-y-2 hover:before:translate-x-2 delay-150 hover:before:transition hover:before:duration-500
         ">
-          <img src={renier2} alt="profile" className=" ss:w-[400px] ss:h-[400px]  md:saturate-150 md:hover:filter  transition ease-in-out duration-500 z-10 rounded-md" />
+          <img src={renier3} alt="profile" className=" ss:w-[400px] ss:h-[400px]   md:hover:filter  transition ease-in-out duration-500 z-10 rounded-md" />
         </div>
         </motion.div>
 
