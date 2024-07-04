@@ -717,10 +717,42 @@ export const portfolio = [
 export const experiences = [
   {
     id: "experience-1",
+    nameJobEn: "WAYTECH",
+    nameJobEs: "WAYTECH",
+    datesEn: "Feb 2024 - Present",
+    datesEs: "Feb 2020 - Actual",
+    positionEn: "Fullstack Developer",
+    positionEs: "Desarrollador Fullstack",
+    roles: [
+      {
+        id: "role-1",
+        descriptionEn:
+          "Development of services and modules, utilizing good practices of component-oriented programming both in Frontend and Backend using technologies such as PHP, Laravel, JavaScript, JQuery, ReactJs, Typescript.",
+        descriptionEs:
+          "Desarrollo de servicios y módulos, haciendo uso de buenas prácticas de programación orientadas a componentes tanto en Frontend y Backend usando tecnologías como PHP, Laravel, JavaScript, JQuery, ReactJs, Typescript.",
+      },
+      {
+        id: "role-2",
+        descriptionEn:
+          "Development of specialized services and flows with Node-Red for the consumption of applications developed and maintained both in Development and Production environments.",
+        descriptionEs:
+          "Desarrollo de servicios y flujos especializados con Node-Red para el consumo de las aplicaciones desarrolladas y mantenidas en tanto en Desarrollo como en Producción.",
+      },
+      {
+        id: "role-3",
+        descriptionEn:
+          "Management and administration of Relational Databases such as MySQL, SQL Server and creation of Stored Procedures for consumption of general services",
+        descriptionEs:
+          "Manejo y administración de Bases de datos Relacionales como MySQL, SQL Server y creacion de Stored Procedures para consumo de servicios generales.",
+      },
+    ],
+  },
+  {
+    id: "experience-2",
     nameJobEn: "FENACREP",
     nameJobEs: "FENACREP",
-    datesEn: "Jul 2020 - Present",
-    datesEs: "Jul 2020 - Actual",
+    datesEn: "Jul 2020 - Dic 2023",
+    datesEs: "Jul 2020 - Dic 2023",
     positionEn: "Programmer Analyst",
     positionEs: "Analista Programador",
     roles: [
@@ -748,7 +780,7 @@ export const experiences = [
     ],
   },
   {
-    id: "experience-2",
+    id: "experience-3",
     nameJobEn: "Pacific Institute",
     nameJobEs: "Instituto Pacífico",
     datesEn: "Apr 2018 - Jul 2020",
@@ -780,7 +812,7 @@ export const experiences = [
     ],
   },
   {
-    id: "experience-3",
+    id: "experience-4",
     nameJobEn: "Garzon Hypermarket",
     nameJobEs: "Garzon Hipermercado",
     datesEn: "Jun 2016 - Nov 2018",
