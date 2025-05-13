@@ -719,8 +719,8 @@ export const experiences = [
     id: "experience-1",
     nameJobEn: "WAYTECH",
     nameJobEs: "WAYTECH",
-    datesEn: "Feb 2024 - Present",
-    datesEs: "Feb 2020 - Actual",
+    datesEn: "Feb 2024 - Apr 2025",
+    datesEs: "Feb 2024 - Abr 2025",
     positionEn: "Fullstack Developer",
     positionEs: "Desarrollador Fullstack",
     roles: [
