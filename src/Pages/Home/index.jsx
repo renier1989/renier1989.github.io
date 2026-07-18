@@ -28,7 +28,7 @@ function HomePage() {
           <Skills language={cvinfo.language} />
           <Experiences language={cvinfo.language} className="-z-10" />
           {/* <Testimonials /> */}
-          <Contact language={cvinfo.language} />
+          {/* <Contact language={cvinfo.language} /> */}
         </div>
       </div>
     </>

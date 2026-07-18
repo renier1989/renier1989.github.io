@@ -19,7 +19,7 @@ function Home({language, setLanguage }) {
                 visible: { opacity: 1 , x: 0 }
               }}
             >
-              <img src={logo2g} alt="profile" className="md:max-w-[700px] md:relative -left-20 top-48 transition duration-500 " />
+              <img src={logo2g} alt="profile" className="md:max-w-[700px] md:relative -left-10 top-48 transition duration-500 " />
             </motion.div>
         </div>
       {/* Here will go the Name and some information */}
@@ -67,7 +67,7 @@ function Home({language, setLanguage }) {
 
 
         {/* Here will go the bottoms fot CTA */}
-        <motion.div
+        {/* <motion.div
         className='flexCenter  mt-5'
         initial="hidden"
         whileInView="visible"
@@ -78,11 +78,11 @@ function Home({language, setLanguage }) {
           visible: { opacity: 1 , x: 0 }
         }}
         >
-          <a href="#contact" className='font-semibold text-white bg-gradient-to-r from-second via-fourth to-red-500 rounded-md py-3 px-6  transition duration-500 '>
+          <a href="/#/#contact" className='font-semibold text-white bg-gradient-to-r from-second via-fourth to-red-500 rounded-md py-3 px-6  transition duration-500 '>
             {language ? homeInfo.buttonEs : homeInfo.buttonEn}
           </a>
 
-        </motion.div>
+        </motion.div> */}
 
         {/* sicial media icons  */}
         <motion.div

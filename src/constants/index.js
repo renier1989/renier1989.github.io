@@ -71,7 +71,7 @@ export const navLinks = [
     id: "contact",
     titleEn: "Contact",
     titleEs: "Contacto",
-    visible: true,
+    visible: false,
   },
 ];
 

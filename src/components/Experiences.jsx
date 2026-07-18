@@ -8,7 +8,7 @@ function Experiences({language}) {
 
   return (
     
-      <section id="experiences" className=" text-first rounded-md pt-48">
+      <section id="experiences" className=" text-first rounded-md pt-48 pb-24">
         <div className="bg-second rounded-md py-20">
         {/* Here goes the Experiences Text and some info. */}
         <motion.div
